@@ -28,7 +28,7 @@ const ACCENT_MAP = {
     [ACCENT_GREEN]: accentGreen,
     [ACCENT_RAINBOW]: accentRainbow
 };
-const ACCENT_DEFAULT = ACCENT_ORANGE;
+const ACCENT_DEFAULT = ACCENT_PURPLE;
 
 const GUI_LIGHT = 'light';
 const GUI_DARK = 'dark';
@@ -36,14 +36,14 @@ const GUI_MAP = {
     [GUI_LIGHT]: guiLight,
     [GUI_DARK]: guiDark
 };
-const GUI_DEFAULT = GUI_LIGHT;
+const GUI_DEFAULT = GUI_DARK;
 
 const BLOCKS_THREE = 'three';
 const BLOCKS_DARK = 'dark';
 const BLOCKS_HIGH_CONTRAST = 'high-contrast';
 const BLOCKS_CUSTOM = 'custom';
 const BLOCKS_DEFAULT = BLOCKS_THREE;
-const defaultBlockColors = blocksThree.blockColors;
+const defaultBlockColors = blocksDark.blockColors;
 const BLOCKS_MAP = {
     [BLOCKS_THREE]: {
         blocksMediaFolder: 'blocks-media/default',
