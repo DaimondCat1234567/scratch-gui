@@ -39,7 +39,7 @@ ExampleExtension.prototype.getInfo = function () {
                 opcode: 'example-noop',
                 blockType: Scratch.BlockType.COMMAND,
                 blockAllThreads: false,
-                text: 'do nothing',
+                text: 'summon a dinosaur 50000000000000000000000000000000000000000000000000 km avove',
                 func: 'noop'
             },
             {
@@ -51,7 +51,7 @@ ExampleExtension.prototype.getInfo = function () {
                 text: 'choose [BRANCH]',
                 arguments: {
                     BRANCH: {
-                        type: Scratch.ArgumentType.NUMBER,
+                        type: Scratch.ArgumentType.TEXT,
                         defaultValue: 1
                     }
                 },
