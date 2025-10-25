@@ -46,13 +46,13 @@ ExampleExtension.prototype.getInfo = function () {
                 opcode: 'example-conditional',
                 blockType: Scratch.BlockType.CONDITIONAL,
                 branchCount: 4,
-                isTerminal: true,
+                
                 blockAllThreads: false,
                 text: 'choose [BRANCH]',
                 arguments: {
                     BRANCH: {
                         type: Scratch.ArgumentType.TEXT,
-                        defaultValue: 1
+                        defaultValue: "1"
                     }
                 },
                 func: 'noop'
@@ -99,7 +99,7 @@ ExampleExtension.prototype.getInfo = function () {
                 // Required: the human-readable text on this block, including argument
                 // placeholders. Argument placeholders should be in [MACRO_CASE] and
                 // must be [ENCLOSED_WITHIN_SQUARE_BRACKETS].
-                text: 'letter [LETTER_NUM] of [TEXT]',
+                text: 'character [LETTER_NUM] of [TEXT]',
 
                 // Required: describe each argument.
                 // Note that this is an array: the order of arguments will be used
@@ -137,13 +137,13 @@ ExampleExtension.prototype.getInfo = function () {
             {
                 opcode: 'example-Boolean',
                 blockType: Scratch.BlockType.BOOLEAN,
-                text: 'return true',
+                text: 'true',
                 func: 'returnTrue'
             },
             {
                 opcode: 'example-hat',
                 blockType: Scratch.BlockType.HAT,
-                text: 'after forever',
+                text: 'after blocky dies',
                 func: 'returnFalse'
             },
             {
